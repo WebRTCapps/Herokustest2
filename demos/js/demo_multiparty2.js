@@ -488,7 +488,7 @@ function expandThumb(whichBox) {
         activeBox = whichBox;
         //setReshaper(id, reshapeToFullSize);
         document.getElementById(id).style.zIndex = 1;
-        /*
+        /* *
         if( whichBox > 0) {
             document.getElementById('muteButton').style.display = "block";
            updateMuteImage();
