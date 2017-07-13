@@ -441,6 +441,7 @@ function setReshaper(elementId, reshapeFn) {
 }
 
 */
+
 function collapseToThumbHelper() {
     if( activeBox >= 0) {
         var id = getIdOfBox(activeBox);
@@ -455,11 +456,11 @@ function collapseToThumbHelper() {
 function collapseToThumb() {
     collapseToThumbHelper();
     activeBox = -1;
-    updateMuteImage(false);
+    //updateMuteImage(false);
     handleWindowResize();
 
 }
-
+/*
 function updateMuteImage(toggle) {
     var muteButton = document.getElementById('muteButton');
     if( activeBox > 0) { // no kill button for self video
@@ -476,7 +477,7 @@ function updateMuteImage(toggle) {
         muteButton.style.display = "none";
     }
 }
-
+*/
 
 function expandThumb(whichBox) {
     var lastActiveBox = activeBox;
@@ -520,7 +521,7 @@ function killActiveBox() {
 */
 
 function muteActiveBox() {
-    updateMuteImage(true);
+  //  updateMuteImage(true);
 }
 
 
