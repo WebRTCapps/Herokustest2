@@ -446,8 +446,8 @@ function collapseToThumbHelper() {
         var id = getIdOfBox(activeBox);
         document.getElementById(id).style.zIndex = 2;
        // setReshaper(id, reshapeThumbs[activeBox]);
-        document.getElementById('muteButton').style.display = "none";
-        document.getElementById('killButton').style.display = "none";
+        /*document.getElementById('muteButton').style.display = "none";
+        document.getElementById('killButton').style.display = "none";*/
         activeBox = -1;
     }
 }
