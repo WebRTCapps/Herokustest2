@@ -722,7 +722,7 @@ function appInit() {
                 document.getElementById('textEntryButton').style.display = 'none';
                 document.getElementById('textentryBox').style.display = 'none';
             }
-            handleWindowResize();
+            //handleWindowResize();
         },20);
     });
 }
