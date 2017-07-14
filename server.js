@@ -44,7 +44,7 @@ easyrtc.events.on("roomJoin", function(connectionObj, roomName, roomParameter, c
     console.log("["+connectionObj.getEasyrtcid()+"] Credential retrieved!", connectionObj.getFieldValueSync("credential"));
     easyrtc.events.defaultListeners.roomJoin(connectionObj, roomName, roomParameter, callback);
 });
-
+easyrtc.setOption('appIceServers', [{url: 'stun:stun.l.google.com:19302'}], 'roomDefaultEnable', true); // enable stun
 // Start EasyRTC server
 var rtc = easyrtc.listen(app, socketServer, null, function(err, rtcRef) {
     console.log("Initiated");
