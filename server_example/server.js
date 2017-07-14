@@ -44,6 +44,7 @@ easyrtc.events.on("roomJoin", function(connectionObj, roomName, roomParameter, c
 });
 
 // Start EasyRTC server
+  easyrtc.setOption('appIceServers', [{url: 'stun:stun.l.google.com:19302'}], 'roomDefaultEnable', true); // bech n7ot stun par défaut :p
 var rtc = easyrtc.listen(app, socketServer, null, function(err, rtcRef) {
     console.log("Initiated");
 
