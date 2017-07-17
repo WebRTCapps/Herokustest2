@@ -457,7 +457,7 @@ function collapseToThumb() {
     collapseToThumbHelper();
     activeBox = -1;
     //updateMuteImage(false);
-    handleWindowResize();
+    //handleWindowResize();
 
 }
 /*
