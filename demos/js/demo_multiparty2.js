@@ -702,7 +702,7 @@ function appInit() {
         boxUsed[slot+1] = true;
         if(activeBox == 0 ) { // first connection
             collapseToThumb();
-            document.getElementById('textEntryButton').style.display = 'block';
+           // document.getElementById('textEntryButton').style.display = 'block';
         }
         document.getElementById(getIdOfBox(slot+1)).style.visibility = "visible";
       //  handleWindowResize();
